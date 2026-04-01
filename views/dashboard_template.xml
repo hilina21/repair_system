@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="gadjet_dashboard_template" owl="1" t-name="repair_system.gadjet_dashboard_template">
+        <div class="o_dashboards">
+            <div class="container-fluid py-5 bg-light text-center">
+                <h1 class="display-4 font-weight-bold">Welcome to Gadget Repair</h1>
+                <p class="lead">System is Ready for Repairs.</p>
+            </div>
+        </div>
+    </template>
+</odoo>

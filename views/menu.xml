@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_gadjet_dashboard" model="ir.actions.client">
+        <field name="name">Dashboard</field>
+        <field name="tag">gadjet_dashboard_tag</field>
+    </record>
+    <menuitem id="menu_gadjet_repair_main" 
+              name="Gadget Repair" 
+              sequence="1"
+              action="action_gadjet_dashboard"/>
+    <menuitem id="menu_gadjet_repair_parent" 
+              name="Repair System" 
+              parent="menu_gadjet_repair_main"
+              sequence="10"/>
+    <menuitem id="menu_gadjet_repair_child" 
+              name="Repairs" 
+              parent="menu_gadjet_repair_parent"
+              action="action_gadjet_repair"
+              sequence="20"/>
+</odoo>

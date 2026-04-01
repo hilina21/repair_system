@@ -1,40 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <record id="view_model_form" model="ir.ui.view">
-        <field name="name">gadjet.repair.form</field>
-        <field name="model">gadjet.repair</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <group>
-                            <field name="reference"/>
-                            <!-- <field name="partner_id"/> -->
-                        </group>
-                        <group>
-                            <field name="customer_id"/>
-                            <!-- <field name="user_id"/> -->
-                        </group>
-                    </group>
-                </sheet>
-            </form>
-        </field>
-    </record>
-    <record id="view_model_tree" model="ir.ui.view">
-        <field name="name">gadjet.repair.tree</field>
-        <field name="model">gadjet.repair</field>
-        <field name="arch" type="xml">
-            <tree>
-                <field name="reference"/>
-                <!-- <field name="partner_id"/> -->
-                <field name="customer_id"/>
-                <!-- <field name="user_id"/> -->
-            </tree>
-        </field>
-    </record>
-    <record id="action_gadjet_repair" model="ir.actions.act_window">
-        <field name="name">Gadget Repairs</field>
-        <field name="res_model">gadjet.repair</field>
-        <field name="view_mode">tree,form</field>
-    </record>
+
+
+    
 </odoo>

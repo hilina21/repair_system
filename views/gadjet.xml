@@ -1,41 +1,51 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <record id="view_model_form" model="ir.ui.view">
+
+    <!-- SEQUENCE -->
+    <record id="seq_gadjet_repair" model="ir.sequence">
+        <field name="name">Gadget Repair</field>
+        <field name="code">gadjet.repair</field>
+        <field name="prefix">GR/</field>
+        <field name="padding">5</field>
+    </record>
+
+    <!-- FORM VIEW -->
+    <record id="view_gadjet_form" model="ir.ui.view">
         <field name="name">gadjet.repair.form</field>
         <field name="model">gadjet.repair</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
                     <group>
-                        <group>
-                            <field name="reference"/>
-                            
-                        </group>
-                        <group>
-                            <field name="customer_id"/>
-                           
-                        </group>
+                        <field name="reference"/>
+                        <field name="customer_id"/>
+                        <field name="state" widget="statusbar"/>
+                        <field name="priority"/>
                     </group>
                 </sheet>
             </form>
         </field>
     </record>
-    <record id="view_model_tree" model="ir.ui.view">
+
+    <!-- TREE VIEW -->
+    <record id="view_gadjet_tree" model="ir.ui.view">
         <field name="name">gadjet.repair.tree</field>
         <field name="model">gadjet.repair</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="reference"/>
-               
                 <field name="customer_id"/>
-                
+                <field name="state"/>
+                <field name="priority"/>
             </tree>
         </field>
     </record>
-    
+
+    <!-- ACTION -->
     <record id="action_gadjet_repair" model="ir.actions.act_window">
-        <field name="name">Gadget Repairs</field>
+        <field name="name">Repairs</field>
         <field name="res_model">gadjet.repair</field>
         <field name="view_mode">tree,form</field>
     </record>
+
+
 </odoo>

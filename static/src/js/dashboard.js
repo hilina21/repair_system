@@ -1,10 +1,10 @@
 /** @odoo-module **/
+
 import { registry } from "@web/core/registry";
-import { Component, xml } from "@odoo/owl";
+import { Component } from "@odoo/owl";
 
-class GadjetDashboard extends Component {
-    static template = "repair_system.gadjet_dashboard_template";
-}
+class GadgetDashboard extends Component {}
 
-registry.category("actions").add("gadjet_dashboard_tag", GadjetDashboard);
+GadgetDashboard.template = "repair_system.dashboard";
 
+registry.category("actions").add("gadget_dashboard", GadgetDashboard);

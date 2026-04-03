@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="repair_system.dashboard">
+        <div class="d-flex justify-content-center align-items-center" style="height:100vh;">
+            <div class="text-center">
+                <h1>🔧 Gadget Repair System</h1>
+                <p>Welcome! Your system is ready.</p>
+            </div>
+        </div>
+    </t>
+
+</templates>

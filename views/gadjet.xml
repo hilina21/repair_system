@@ -8,7 +8,7 @@
         <field name="padding">5</field>
     </record>
 
-    <!-- FORM VIEW -->
+    
     <record id="view_gadjet_form" model="ir.ui.view">
         <field name="name">gadjet.repair.form</field>
         <field name="model">gadjet.repair</field>
@@ -26,7 +26,7 @@
         </field>
     </record>
 
-    <!-- TREE VIEW -->
+  
     <record id="view_gadjet_tree" model="ir.ui.view">
         <field name="name">gadjet.repair.tree</field>
         <field name="model">gadjet.repair</field>
